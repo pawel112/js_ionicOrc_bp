@@ -1,0 +1,16 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Faktury BP
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3 *ngIf="debugText">Debug: {{debugText}}</h3>
+	<span>{{recognizedText}}</span>
+
+	<ion-fab right bottom>
+		<button ion-fab (click)="openMenu()" color="danger"><ion-icon name="add"></ion-icon></button>
+	</ion-fab>
+</ion-content>
